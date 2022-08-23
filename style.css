@@ -1,0 +1,436 @@
+.overLay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 119, 0, 0.6);
+}
+
+.button {
+  width: 210px;
+  height: 50px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff7700;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 20px 0px 5px;
+  background-color: rgb(87, 86, 86);
+  box-shadow: 1px 1px 15px rgb(87, 86, 86);
+  position: relative;
+}
+header .logo {
+  font-size: 50px;
+  font-weight: 900;
+  color: #ff7700;
+  cursor: pointer;
+}
+header nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-right: 140px;
+}
+header nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+header nav ul li {
+  height: 110%;
+  width: 70px;
+  display: flex;
+  align-items: center;
+}
+header nav ul li a {
+  width: 70px;
+  height: 70px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+header nav ul li a:hover {
+  color: black;
+  letter-spacing: 2px;
+  background-color: #c05a00;
+}
+header nav .more:hover .mega {
+  opacity: 1;
+  z-index: 100;
+}
+header nav .more .mega {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #ff7700;
+  transition: 0.5s;
+}
+header nav .more .mega::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #ff7700;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  z-index: 1000;
+}
+
+.landing {
+  height: 60vh;
+  background: url(landing.jpg);
+  background-size: cover;
+  background-position: felx-start;
+}
+.landing .content-box {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  width: 400px;
+  padding: 20px;
+}
+.landing .content-box h1 {
+  font-size: 65px;
+  color: #ff7700;
+  font-weight: 900;
+  cursor: pointer;
+}
+.landing .content-box p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #949493;
+  text-align: center;
+  cursor: pointer;
+}
+.landing .content-box p span {
+  font-size: 30px;
+  color: #ff7700;
+}
+.landing .content-box .button {
+  margin: 5px auto;
+}
+
+.pricing {
+  min-height: 100vh;
+  background: url("back.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.pricing > .heading {
+  font-size: 55px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.pricing > .text {
+  font-size: 20px;
+  color: #949493;
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
+}
+.pricing .box {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pricing .box .card {
+  height: 350px;
+  flex-basis: 31%;
+  background-color: #ff7700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+}
+.pricing .box .card .heading {
+  text-transform: capitalize;
+  font-size: 45px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.pricing .box .card .text {
+  text-align: center;
+  color: #949493;
+  cursor: pointer;
+}
+.pricing .box .card .button {
+  background-color: #464545;
+  color: white;
+}
+
+.features {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.features .card {
+  width: 50%;
+  height: 50vh;
+  background-color: #ff7700;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.features .card img {
+  max-width: 100%;
+}
+.features .card p {
+  font-size: 55px;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+}
+.features .card .button {
+  background-color: #464545;
+  color: #ff7700;
+  margin-top: 20px;
+}
+
+.stat {
+  min-height: 65vh;
+  background: url(back.jpg);
+  background-size: cover;
+  background-position: felx-start;
+}
+.stat .heading {
+  font-size: 45px;
+  font-weight: 900;
+  color: white;
+  text-transform: capitalize;
+}
+.stat .text {
+  color: #949493;
+  text-align: center;
+}
+.stat .box {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.stat .box .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 33%;
+  height: 100%;
+  padding: 50px;
+}
+.stat .box .card .heading {
+  font-size: 45px;
+  font-weight: 900;
+  color: white;
+}
+.stat .box .card .text {
+  color: #949493;
+}
+
+.quote {
+  min-height: 50vh;
+  background: url("q.jpg");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+.quote .box {
+  width: 50%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.quote .box q {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  z-index: 10000;
+}
+.quote .box p {
+  margin-top: 20px;
+  color: rgb(199, 199, 199);
+  font-size: 25px;
+  font-weight: 500;
+  z-index: 10000;
+  text-transform: capitalize;
+}
+
+.sub {
+  min-height: 50vh;
+  background: url(back-2.jpg);
+  background-size: cover;
+  background-position: felx-start;
+}
+.sub .heading {
+  font-size: 45px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+.sub .text {
+  text-align: center;
+  color: #949493;
+  cursor: pointer;
+}
+.sub .box {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub .box .email {
+  width: 70%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.sub .box .bt {
+  width: 25%;
+  background-color: #464545;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #292828;
+  padding-bottom: 10px;
+}
+footer div {
+  position: relative;
+  padding: 30px 20px 0;
+}
+footer .one {
+  flex-basis: 40%;
+  height: 50vh;
+}
+footer .one .heading {
+  font-size: 55px;
+  font-weight: 900;
+  color: #ff7700;
+  cursor: pointer;
+}
+footer .one .text {
+  line-height: 1.5;
+  color: #949493;
+}
+footer .one .box {
+  padding: 25px;
+  position: relative;
+  width: 300px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .one .box img {
+  cursor: pointer;
+}
+footer .tow {
+  flex-basis: 20%;
+  height: 45vh;
+}
+footer .tow .heading {
+  font-size: 45px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  color: #949493;
+}
+footer .tow ul li {
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: #949493;
+  transition: 0.5s;
+  cursor: pointer;
+}
+footer .tow ul li:hover {
+  margin-left: 5px;
+}
+footer .three {
+  flex-basis: 20%;
+  height: 45vh;
+}
+footer .three .heading {
+  font-size: 45px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  color: #949493;
+}
+footer .three ul li {
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: #949493;
+  transition: 0.5s;
+  cursor: pointer;
+}
+footer .three ul li:hover {
+  margin-left: 5px;
+}
+footer .fore {
+  flex-basis: 20%;
+  height: 45vh;
+}
+footer .heading {
+  font-size: 45px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  color: #949493;
+}
+footer ul li {
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: #949493;
+  transition: 0.5s;
+  cursor: pointer;
+}
+footer ul li:hover {
+  margin-left: 5px;
+  color: white;
+}

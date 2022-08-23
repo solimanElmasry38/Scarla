@@ -1,0 +1,38 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    
+    min-width: 100vh;
+    min-height:100vh;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+section{
+    position:relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color: aqua;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:space-between;
+    padding:50px;
+}
+
+input{
+    border:none;
+    outline: none;
+    padding: 20px;
+}
+
+::-webkit-scrollbar{
+    width:0;
+}
